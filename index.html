@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polygon generator</title>
+  <link rel="stylesheet" href="p3.css">
+  <script src="p3.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Polygon Generator </legend>
+        <div>
+          <label for="js-side-count">Number of Sides : </label>
+          <input type="number" id="js-side-count" value="8">
+        </div>
+        <div>
+          <label for="js-radius">Radius : </label>
+          <input type="number" id="js-radius" value="80">
+        </div>
+        <fieldset>
+          <legend>Center </legend>
+          <label for="js-cx">Center X Coordinate : </label>
+          <input type="number" id="js-cx" value="10"> <br>
+          <label for="js-cy">Center Y Coordinate : </label>
+          <input type="number" id="js-cy" value="18">
+        </fieldset>
+      </fieldset>
+
+      <div id="btn">
+        <input id="js-generate" type="button" value="Generate">
+      </div>
+    </form>
+    <div>
+      <svg id="js-svg" viewBox="0 0 800 800" stroke="purple" fill="aqua" stroke-width="1">
+        <polygon id="js-polygon" points="">
+      </svg>
+      <pre id="js-result"></pre>
+    </div>
+  </main>
+</body>
+
+</html>
